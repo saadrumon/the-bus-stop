@@ -1,24 +1,27 @@
-# README
+# the-bus-stop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run the application execute the following commands:
 
-Things you may want to cover:
+* Clone the project
 
-* Ruby version
+* Move to project directory
 
-* System dependencies
+* Copy .env.sample to .env and put appropriate database credentials
 
-* Configuration
+* Run `bundle install`
 
-* Database creation
+* Run `rails db:create && rails db:migrate && rails db:seed`
 
-* Database initialization
+* Run `rails s`
 
-* How to run the test suite
+# index endpoints
 
-* Services (job queues, cache servers, search engines, etc.)
+* `http://localhost:3000/users`
 
-* Deployment instructions
+* `http://localhost:3000/complaints`
 
-* ...
+* `http://localhost:3000/passengers`
+
+# create endpoints (http method: post)
+
+* `http://localhost:3000/users`
