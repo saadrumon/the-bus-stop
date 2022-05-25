@@ -3,4 +3,13 @@ class UsersController < ApplicationController
     users = User.all
     render json: users
   end
+
+  def create
+    user = User.create(
+      name: params["name"],
+      gender: params["gender"]
+    )
+    render json: user
+  end
+
 end
